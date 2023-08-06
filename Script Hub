@@ -1,0 +1,161 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnable = false})
+
+OrionLib:MakeNotification({
+	Name = "Sistema De Key",
+	Content = "Olá "..Player.Name.." ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.Key = "lMwoSq*tl*"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+	local Window = OrionLib:MakeWindow({Name = "Roblox Leaks/Scripts HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Scripts AFS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Yuto Hub",
+	Callback = function()
+	setclipboard("u65HZB47njP#g*Rg9")
+	toclipboard("u65HZB47njP#g*Rg9")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/afss"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Platinium Hub",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Platinium Hub",
+	Content = "Aproveite o Script!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Dupe ON",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Dupe Ativado.",
+	Content = "Aproveite!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    local args = {
+    [1] = "\0" .. string.rep("B", 4200000)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Keys",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Copiar Key Platinium Hub",
+	Callback = function()
+	setclipboard("cE6eX0bT4eA3rA4y")
+	toclipboard("cE6eX0bT4eA3rA4y")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Discord",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Copiar Link Discord",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Sucesso!",
+	Content = "Link Copiado Automaticamente.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard("https://discord.gg/SDj3Jkk9zd")
+	toclipboard("https://discord.gg/SDj3Jkk9zd")		
+  	end    
+})
+end
+
+function CorrectKeyNotification()
+	OrionLib:MakeNotification({
+	Name = "Key Correta!",
+	Content = "Voce colocou a key certa!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
+
+function IncorrectKeyNotification()
+	OrionLib:MakeNotification({
+	Name = "Key Incorreta!",
+	Content = "Voce colocou a key errada!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Checar Key",
+	Callback = function()
+    	if _G.KeyInput == _G.Key then
+	    MakeScriptHub()
+		CorrectKeyNotification()
+		else
+			IncorrectKeyNotification()
+		end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Pegar Key!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Clique aqui para copiar o link!",
+	Callback = function()
+      			OrionLib:MakeNotification({
+	Name = "Sucesso!",
+	Content = "Link Copiado Automaticamente.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard("https://link-target.net/907406/scripts-hub-key")
+	toclipboard("https://link-target.net/907406/scripts-hub-key")
+  	end    
+})
