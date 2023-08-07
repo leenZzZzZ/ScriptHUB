@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnable = false})
+local Window = OrionLib:MakeWindow({Name = "Sistema De Key", HidePremium = false, SaveConfig = true, IntroEnable = false})
 
 OrionLib:MakeNotification({
 	Name = "Sistema De Key",
@@ -13,11 +13,11 @@ _G.Key = "lMwoSq*tl*"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-	local Window = OrionLib:MakeWindow({Name = "Roblox Leaks/Scripts HUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+	local Window = OrionLib:MakeWindow({Name = "Roblox Leaks/Scripts HUB V1.1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Scripts AFS",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://11348590078",
 	PremiumOnly = false
 })
 
@@ -44,6 +44,19 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+	Name = "Zer0 Hub",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Zer0 Hub",
+	Content = "Aproveite o Script!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+  	end    
+})
+
+Tab:AddButton({
 	Name = "Dupe ON",
 	Callback = function()
 	OrionLib:MakeNotification({
@@ -62,7 +75,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTut
 
 local Tab = Window:MakeTab({
 	Name = "Keys",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://221748793",
 	PremiumOnly = false
 })
 
@@ -75,13 +88,13 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Discord",
-	Icon = "rbxassetid://4483345998",
+	Name = "Nosso Discord",
+	Icon = "rbxassetid://1461403871",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Copiar Link Discord",
+	Name = "Copiar Link Discord!",
 	Callback = function()
 	OrionLib:MakeNotification({
 	Name = "Sucesso!",
@@ -91,6 +104,20 @@ Tab:AddButton({
 })
 	setclipboard("https://discord.gg/SDj3Jkk9zd")
 	toclipboard("https://discord.gg/SDj3Jkk9zd")		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "https://discord.gg/SDj3Jkk9zd",
+	Callback = function()
+      		      		      			OrionLib:MakeNotification({
+	Name = "Sucesso!",
+	Content = "Link Copiado Automaticamente.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard("https://discord.gg/SDj3Jkk9zd")
+	toclipboard("https://discord.gg/SDj3Jkk9zd")
   	end    
 })
 end
@@ -115,7 +142,7 @@ end
 
 local Tab = Window:MakeTab({
 	Name = "Key",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://221748793",
 	PremiumOnly = false
 })
 
@@ -142,7 +169,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "Pegar Key!",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://221748793",
 	PremiumOnly = false
 })
 
@@ -157,5 +184,39 @@ Tab:AddButton({
 })
 	setclipboard("https://link-target.net/907406/scripts-hub-key")
 	toclipboard("https://link-target.net/907406/scripts-hub-key")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Nosso Discord",
+	Icon = "rbxassetid://1461403871",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Copiar link do discord!",
+	Callback = function()
+      		      			OrionLib:MakeNotification({
+	Name = "Sucesso!",
+	Content = "Link Copiado Automaticamente.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard("https://discord.gg/SDj3Jkk9zd")
+	toclipboard("https://discord.gg/SDj3Jkk9zd")
+  	end        
+})
+
+Tab:AddButton({
+	Name = "https://discord.gg/SDj3Jkk9zd",
+	Callback = function()
+      		      		      			OrionLib:MakeNotification({
+	Name = "Sucesso!",
+	Content = "Link Copiado Automaticamente.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard("https://discord.gg/SDj3Jkk9zd")
+	toclipboard("https://discord.gg/SDj3Jkk9zd")
   	end    
 })
