@@ -46,6 +46,8 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Zer0 Hub",
 	Callback = function()
+	setclipboard("https://zer0hub.com/")
+	toclipboard("https://zer0hub.com/")
 	OrionLib:MakeNotification({
 	Name = "Zer0 Hub",
 	Content = "Aproveite o Script!!",
