@@ -95,6 +95,25 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main
 })
 
 local Tab = Window:MakeTab({
+	Name = "Anime Fighting X",
+	Icon = "rbxassetid://11348590078",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Sky Hub",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Abrindo Script...",
+	Content = "Aproveite!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))();
+  	end    
+})
+
+local Tab = Window:MakeTab({
 	Name = "Keys",
 	Icon = "rbxassetid://221748793",
 	PremiumOnly = false
