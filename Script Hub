@@ -34,8 +34,8 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Yuto Hub",
 	Callback = function()
-	setclipboard("V2LEvuL7Bx3Ah!ES2")
-	toclipboard("V2LEvuL7Bx3Ah!ES2")
+	setclipboard("ptu^g6Up6&5&eE4c3")
+	toclipboard("ptu^g6Up6&5&eE4c3")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Binintrozza/yutv2e/main/afss"))()
   	end    
 })
