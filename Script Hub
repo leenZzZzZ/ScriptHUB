@@ -130,6 +130,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYH
   	end    
 })
 
+Tab:AddButton({
+	Name = "Muimi Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bunnynwy/games/main/AnimeFightingX"))()
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "King Legacy",
 	Icon = "rbxassetid://11348590078",
