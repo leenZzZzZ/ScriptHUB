@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v10={};for v11=1, #v8 do v6(v10,v0(v4(v1(v2(v8,v11,v11 + 1 )),v1(v2(v9,1 + (v11% #v9) ,1 + (v11% #v9) + 1 )))%256 ));end return v5(v10);end _G.Key=v7("\221\198\222\43\244\185\223\21\212\218\194\111\255\241","\126\177\163\187\69\134\219\167");_G.KeyPERM=v7("\15\158\121\203\247\38\212\58\215\175\46\196\63\200","\156\67\173\74\165");_G.KeyInput=v7("\39\163\91\31\178\33","\38\84\215\41\118\220\70");
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v10={};for v11=1, #v8 do v6(v10,v0(v4(v1(v2(v8,v11,v11 + 1 )),v1(v2(v9,1 + (v11% #v9) ,1 + (v11% #v9) + 1 )))%256 ));end return v5(v10);end _G.Key=v7("\223\198\204\46\227\162\212\29\195\202\203\49\172\168\141","\126\177\163\187\69\134\219\167");_G.KeyPERM=v7("\15\158\121\203\247\38\212\58\215\175\46\196\63\200","\156\67\173\74\165");_G.KeyInput=v7("\39\163\91\31\178\33","\38\84\215\41\118\220\70");
 
 function MakeScriptHub()
 	local Window = OrionLib:MakeWindow({Name = "Roblox Leaks/Scripts HUB V3.1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
